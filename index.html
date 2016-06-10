@@ -1,18 +1,152 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
-    <!-- BootstrapのCSS読み込み -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!-- jQuery読み込み -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <!-- BootstrapのJS読み込み -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>金森 祥治 | Portfolio</title>
+        <!-- BootstrapのCSS読み込み -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- jQuery読み込み -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <!-- BootstrapのJS読み込み -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <style>
+            body {
+                font-family: YuGothic, "游ゴシック", "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+                background-color: #eee;
+                font-size: 14px;
+            }
+
+            header {
+                background-image: url("sea.jpg");
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                padding-bottom: 100px;
+            }
+
+            #logo h1 {
+                letter-spacing: 0.15em;
+                text-shadow: 1px 1px 0px #000;
+                color: #ffffff;
+            }
+
+            #logo {
+                padding: 20px 0;
+                text-align: center;
+            }
+
+            #logo img {
+                max-width: 200px;
+                border: 5px solid #fff;
+                border-radius: 50%;
+                margin: auto;
+            }
+            
+            .container h2 {
+                letter-spacing: 0.15em;
+            }
+            
+            .about {
+                float: left;
+            }
+            
+            .about h3 {
+                letter-spacing: 1em;
+            }
+            
+            .potfolio {
+                text-align: left;
+                position: absolute;
+            }
+            
+            
+            .links {
+                clear: both;
+            }
+            
+            footer {
+                padding: 20px 0;
+                font-size: 93%;
+                text-align: center;
+                background-color: #ccc;
+                color: #666;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="image1.JPG" alt="" width="200px" height="200px">
+                <h1>金森 祥治</h1>
+            </div>
+        </header>
+        <div class="container">
+            <div class="about">
+                <h2>About</h2>
+                <h3>自己紹介</h3><br />
+                <p>金森 祥治</p><br />
+                <p>神奈川県出身。最近、東京へ引っ越し墨田区在住です。</p><br />
+                <p>現在中央大学法学部通信教育課程の３回生です。</p><br />
+                <p>趣味は読書・バスケットボールです。独学でデザインを学んでいます。</p><br />
+                <p>ポートフォリオとSNSを載せておきますので、興味のある方はご連絡ください。</p><br />
+            </div>
+            <div class="portfolio">
+                <h2> Portfolio</h2>
+                <div class="row1">
+                    <div class="col-xs-6 col-md-3">
+                        <a href="#" class="thumbnail">
+                            <img src="messageboard.gif" alt="" width="200px" height="200px">
+                        </a>
+                        <div class="caption">
+                            <p>メッセージボード</p>
+                            <p>テストテストテスト</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="#" class="thumbnail">
+                            <img src="twitterclone.jpg" alt="" width="200px" height="200px">
+                        </a>
+                        <div class="caption">
+                            <p>twitterクローンサイト</p>
+                            <p>テストテストテスト</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <div class="col-xs-6 col-md-3">
+                        <a href="#" class="thumbnail">
+                            <img src="monolist.jpg" alt="" width="200px" height="200px">
+                        </a>
+                        <div class="caption">
+                            <p>モノリスト</p>
+                            <p>テストテストテスト</p>
+                        </div>    
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="#" class="thumbnail">
+                            <img src="bird.jpg" alt="" width="200px" height="200px">
+                        </a>
+                        <div class="caption">
+                            <p>オリジナルサービス</p>
+                            <p>テストテストテスト</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="links">
+                <h2>Links</h2>
+                <div class="well">
+                    <a class="link" href="https://twitter.com/militarou" alt="twitter"><img src="twitter.png" alt="" width="50px" height="50px"></a>
+                    <a class="link" href="https://www.facebook.com/profile.php?id=100003872241734" alt="Facebook"><img src="facebook.png" alt="" width="50px" height="50px"></a>
+                    <a class="link" href="https://www.wantedly.com/users/18132641" alt="wantedly"><img src="wantedly.png" alt="wantedly" width="50px" height="50px"></a>
+                    <a class="link" href="https://github.com/sk0515" alt="GitHub"><img src="GitHub.png" alt="GitHub" width="50px" height="50px"></a>
+                </div>
+            </div>
+        </div>
+    <footer>
+        <p>© 2016 Shoji Kanamori.</p>
+    </footer>
   </body>
 </html>
